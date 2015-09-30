@@ -2,7 +2,7 @@
 Real Estate Math
 ===============================
 
-.. image:: https://img.shields.io/travis/austinmcconnell/remath.svg
+.. image:: https://travis-ci.org/austinmcconnell/remath.svg?branch=master
         :target: https://travis-ci.org/austinmcconnell/remath
 
 .. image:: https://img.shields.io/pypi/v/remath.svg
