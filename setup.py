@@ -21,7 +21,8 @@ test_requirements = [
     'pytest',
     'pylint',
     'pycodetyle',
-    'pydocstyle'
+    'pydocstyle',
+    'coverage'
 ]
 
 setup(
