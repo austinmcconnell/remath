@@ -68,14 +68,17 @@ docs:
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html
 
-release: clean
+release:
+    clean
 	python setup.py sdist upload
 	python setup.py bdist_wheel upload
 
-dist: clean
+dist:
+    clean
 	python setup.py sdist
 	python setup.py bdist_wheel
 	ls -l dist
 
-install: clean
+install:
+    clean
 	python setup.py install
