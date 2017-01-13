@@ -18,7 +18,10 @@ requirements = [
 ]
 
 test_requirements = [
-    'pytest', 'flake8'
+    'pytest',
+    'pylint',
+    'pycodetyle',
+    'pydocstyle'
 ]
 
 setup(
