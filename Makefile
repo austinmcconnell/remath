@@ -51,7 +51,7 @@ lint:
 	pydocstyle remath
 
 test:
-	python setup.py test
+	pytest
 
 test-all:
 	tox
