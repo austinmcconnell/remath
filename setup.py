@@ -20,7 +20,7 @@ requirements = [
 test_requirements = [
     'pytest',
     'pylint',
-    'pycodetyle',
+    'pycodestyle',
     'pydocstyle',
     'coverage'
 ]
