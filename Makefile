@@ -46,7 +46,9 @@ clean-test:
 	rm -fr htmlcov/
 
 lint:
-	flake8 remath tests
+	pylint remath --output-format=parseable --reports=no
+	pycodestyle remath
+	pydocstyle remath
 
 test:
 	python setup.py test
@@ -69,16 +71,16 @@ docs:
 	$(BROWSER) docs/_build/html/index.html
 
 release:
-    clean
+	clean
 	python setup.py sdist upload
 	python setup.py bdist_wheel upload
 
 dist:
-    clean
+	clean
 	python setup.py sdist
 	python setup.py bdist_wheel
 	ls -l dist
 
 install:
-    clean
+	clean
 	python setup.py install
